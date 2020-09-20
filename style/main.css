@@ -21,11 +21,18 @@ body    {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+        flex-direction: column;
         margin: 0;
         }
 
+.dir-row {
+        flex-direction: row;
+        margin: 0 8% 0 15%;
+        /* padding: 0; */
+        justify-content: space-between;
+        }
+
 .header__logo {
-        flex-grow: 1;
         font-size: calc(26px + 1.1vw);
         font-family: 'Cherry Swash', cursive;
         font-weight: 400;
@@ -34,8 +41,30 @@ body    {
 
 .header__nav {
         display: flex;
-        justify-content: center;
-        flex-grow: 1;
+        }
+
+.burger-menu {
+        display: none;
+        width: 5%;
+        }
+
+.burger-menu:hover {
+        transition: transform 2s; /* Animation */
+        transform: rotate(360deg);
+        }
+
+.burger-menu__icon {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+
+.burger-menu__icon--item {
+        width: 100%;
+        margin-bottom: 0.5vw;
+        border-bottom-style: solid;
+        border-bottom-width: 0.7vw;
+        border-radius: 0.35vw;
         }
 
 .header__link {
@@ -57,34 +86,28 @@ body    {
         background: url("../img/bg-sea.png") no-repeat ;
         }
 
-
-
-.dir-column {
-        flex-direction: column;
-        }
-
 .promo__title {
-        width: 45%;
+        width: 50%;
         text-transform: uppercase;
-        font-size: calc(30px + 1.1vw);
+        font-size: calc(10px + 2.2vw);
         color: #E4E4E4;
         margin: 13vw auto 3vw;
         }
 
 .promo__btn {
         background-color: transparent;
-        border: 0.234vw solid #E4E4E4;
+        border: 0.25vw solid #E4E4E4;
         border-radius: 0.4vw;
         color: #E4E4E4;
         padding: 1vw 4vw;
         font-family: 'Arial', sans-serif;
-        font-size: calc(16px + 1.1vw);
+        font-size: calc(10px + 1.5vw);
         outline: 0;
         }
 
 .promo__btn:hover {
         transition: transform 2s; /* Animation */
-        transform: scale(2) rotateY(360deg) ;
+        transform: scale(1.5) rotateY(360deg) ;
         }
 
 .promo__list {
@@ -107,6 +130,7 @@ body    {
 
 .promo__item:hover {
         background-color: #69728C;
+        transition: transform 2s; /* Animation */
         transform: scale(1.5);
         }
 
@@ -116,34 +140,36 @@ body    {
         }
 
 .main__title {
-        margin: 80px auto 40px;
-        width: 50%;
-        font-size: 30px;
+        margin: 6% auto 3%;
+        width: 56%;
+        font-size: calc(6px + 2.2vw);
         font-weight: lighter;
         }
 
 .main__description {
         margin: 0;
-        width: 55%;
-        font-size: 14px;
+        width: 66%;
+        font-size: calc(1px + 1vw);
         }
 
 .main-list__icons {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         width: 40%;
-        margin: 70px auto 80px;
+        margin: 5vw auto;
         }
 
 .main-icon {
-        width: 25%;
-        justify-content: space-between;
+        width: 10vmin;
+        height: 10vmin;
+        object-fit: contain;
+        margin: 0;
         }
 
 .main-icon:hover {
-                transition: transform 2s; /* Animation */
-                transform: scale(2) rotate(360deg);
+        transition: transform 2s; /* Animation */
+        transform: scale(2) rotate(360deg);
         }
 
 .testimonial {
@@ -155,7 +181,7 @@ body    {
         display: flex;
         justify-content: space-between;
         width: 23vw;
-        margin: 97px 0 62px 13vw;
+        margin: 6% 0 6% 13vw;
         color: #E4E4E4;
         }
 
@@ -170,7 +196,7 @@ body    {
 .testimonial__dhavan-photo:hover {
         transition: transform 5s; /* Animation */
         transform: scale(2) skew(20deg);
-}
+        }
 
 .testimonial__description {
         width: 10vw;
@@ -182,15 +208,22 @@ body    {
         margin: 1vw 0;
         padding: 0;
         text-transform: uppercase;
-        font-size: 26px;
+        font-size: calc(4px + 1.4vw);
         font-weight: normal;
         }
 
 .testimonial__description--quot {
-        width: 9vw;
-        height: 8vw;
+        width: 8vw;
+        height: 7vw;
         background: url("../img/big-quot.png") no-repeat;
         background-size: contain;
+        }
+
+.testimonial__review {
+        width: 71%;
+        margin: 0 auto 4%;
+        font-size: calc(2px + 1.1vw);    
+        text-align: left;
         }
 
 .contact {
@@ -204,8 +237,8 @@ body    {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 431px;
-        height: 431px;
+        width: 33vw;
+        height: 33vw;
         margin: 3.5% auto;
         background-color:rgba(255, 255, 255, 0.6);
         border-radius: 50%;
@@ -213,18 +246,27 @@ body    {
         font-weight: normal;
         }
 
-input   {
-        margin: 0 0 1vw;
-}
+.form-style  {
+        width: 60%;
+        margin: 0.5vw 0;
+        font-size: calc(1px + 1.2vw);
+        opacity: 0.5;
+        }
+
 
 button.form__submit {
         width: 5.2vw;
         height: 5.2vw;
-        margin: 2vw auto 0;
+        margin: 3vw auto 0;
         background-color: #00D089;
         border: none;
         border-radius: 50%;
         position: relative; 
+        }
+
+.form__submit:hover {
+        transition: transform 2s; /* Animation */
+        transform: rotate(360deg);
         }
 
 span::before {
@@ -232,14 +274,15 @@ span::before {
         position: absolute;
         width: 33%;
         height: 20%;
-        left: 30%;
-        bottom: 40%;
-        border-left: 7px solid rgba(255, 255, 255, 0.8);
-        border-bottom: 7px solid rgba(255, 255, 255, 0.8);
+        left: 25%;
+        bottom: 36%;
+        border-left: 1vw solid rgba(255, 255, 255, 0.8);
+        border-bottom: 1vw solid rgba(255, 255, 255, 0.8);
         transform: rotate(-45deg);
         }
 
 .footer {
         background-color: #00D089;
         text-transform: uppercase;
+        font-size: calc(1px + 1vw);
         }

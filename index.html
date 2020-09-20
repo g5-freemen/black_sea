@@ -11,7 +11,7 @@
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="container">
+            <div class="container dir-row">
                 <h1 class="header__logo">Black Sea</h1>
     
                 <nav class="header__nav">
@@ -23,11 +23,20 @@
                     <div class="header__link-slash"></div>
                     <a class="header__link" href="#">Contact Me</a>
                 </nav>
+
+                <nav class="burger-menu">
+                    <div class="burger-menu__icon">
+                        <div class="burger-menu__icon--item"></div>
+                        <div class="burger-menu__icon--item"></div>
+                        <div class="burger-menu__icon--item"></div>
+                    </div>
+                </nav>
+
             </div>
         </header> <!-- ./ header -->
 
         <div class="promo">
-            <div class="container dir-column">
+            <div class="container">
                 <h2 class="promo__title">We need the tonic of wildness</h2>
 
                 <button class="promo__btn">Read more</button>
@@ -43,23 +52,16 @@
         </div> <!-- ./ promo -->
 
         <main class="main">
-            <div class="container dir-column">
+            <div class="container">
                 <h3 class="main__title">At the same time that we are earnest to explore & learn all things</h3>
 
                 <p class="main__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survied not only five centuries, but also the leap into electronic typesetting
                 </p>
 
                 <div class="main-list__icons">
-                    <div class="main-icon">
-                        <img src="./img/shape-basket.png" alt="Basket">
-                    </div>
-                    <div class="main-icon">
-                        <img src="./img/shape-globe.png" alt="Globe">
-                    </div>
-                    <div class="main-icon">
-                        <img src="./img/shape-portfolio.png" alt="Portfolio">
-                    </div>
+                        <img class="main-icon" src="./img/shape-basket.png" alt="Basket">
+                        <img class="main-icon" src="./img/shape-globe.png" alt="Globe">
+                        <img class="main-icon" src="./img/shape-portfolio.png" alt="Portfolio">
                 </div>
             </div>
         </main> <!-- ./ main -->
@@ -70,25 +72,23 @@
                     <img class="testimonial__dhavan-photo" src="./img/dhavan_photo.png" alt="Dhavan photo">
                     <div class="testimonial__description">
                         <h4 class="testimonial__description--name">Dhavan</h4>
-                        <!-- <span class="testimonial__description--quot">&rdquo;</span> -->
                         <div class="testimonial__description--quot"></div>
                         </div>
                 </div>
                 <blockquote class="testimonial__review">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                but also the leap into electronic typesetting</blockquote>
             </div>
         </div>
 
         <div class="contact">
             <div class="container">
-                <form action="" class="form">
-                    <input class="form__user-name" type="text" value="Name">
-                    <input class="form__user-email" type="email" value="email adress">
-                    <textarea class="form__user-message">Message</textarea>
+                <form class="form">
+                    <input class="form__user-name form-style" type="text" value="Name">
+                    <input class="form__user-email form-style" type="email" value="email adress">
+                    <textarea class="form__user-message form-style">Message</textarea>
                     <button class="form__submit" type="submit">
                     <span></span>
                     </button>
-                    <!-- <input class="form__submit" type="submit" value=""> -->
                 </form>
             </div>
         </div> <!-- ./ contact -->
