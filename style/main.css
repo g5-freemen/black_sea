@@ -6,6 +6,7 @@ body    {
         margin: 0 auto;
         min-width: 480px;
         max-width: 1280px;
+        width: 100%;
         text-align: center;
         font-family: 'Arial', sans-serif;
         color: #FFFFFF;
