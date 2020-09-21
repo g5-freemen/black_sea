@@ -160,8 +160,8 @@ body    {
         }
 
 .main-icon {
-        width: 10vmin;
-        height: 10vmin;
+        width: 5vmin;
+        height: 5vmin;
         object-fit: contain;
         margin: 0;
         }
@@ -221,7 +221,7 @@ body    {
 .testimonial__review {
         width: 71%;
         margin: 0 auto 4%;
-        font-size: calc(2px + 1.1vw);    
+        font-size: calc(3px + 1vw);    
         text-align: left;
         }
 
