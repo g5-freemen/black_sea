@@ -148,7 +148,7 @@ body    {
 .main__description {
         margin: 0;
         width: 66%;
-        font-size: calc(1px + 1vw);
+        font-size: calc(5px + 0.7vw);
         }
 
 .main-list__icons {
@@ -248,7 +248,7 @@ body    {
 .form-style  {
         width: 60%;
         margin: 0.5vw 0;
-        font-size: calc(1px + 1.2vw);
+        font-size: calc(4px + 1vw);
         opacity: 0.5;
         }
 
