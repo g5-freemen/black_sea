@@ -233,8 +233,8 @@ body    {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 30vw;
-        height: 30vw;
+        width: 33vw;
+        height: 33vw;
         margin: 3.5% auto;
         background-color:rgba(255, 255, 255, 0.6);
         border-radius: 50%;
@@ -253,7 +253,7 @@ body    {
 button.form__submit {
         width: 5.2vw;
         height: 5.2vw;
-        margin: 3vw auto 0;
+        margin: 2vw auto 0;
         background-color: #00D089;
         border: none;
         border-radius: 50%;
