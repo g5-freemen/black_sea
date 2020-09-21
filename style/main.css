@@ -73,12 +73,9 @@ body    {
         text-decoration: none;
         }
 
-.header__link-slash {
-        border-top: 0.13vw solid #DCE3E4;
-        width: 1.3vw;
-        margin-left: 1vw;
-        margin-top: 4px;
-        transform: rotate(-70deg);
+.header__link--slash::after {
+        content:"/";
+        margin: 0 0.6vw;
         }
 
 .promo {
@@ -86,7 +83,7 @@ body    {
         }
 
 .promo__title {
-        width: 50%;
+        width: 52.5%;
         text-transform: uppercase;
         font-size: calc(10px + 2.2vw);
         color: #E4E4E4;
@@ -147,7 +144,7 @@ body    {
 
 .main__description {
         margin: 0;
-        width: 66%;
+        width: 68%;
         font-size: calc(5px + 0.7vw);
         }
 
@@ -155,13 +152,13 @@ body    {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 40%;
+        width: 25%;
         margin: 5vw auto;
         }
 
 .main-icon {
-        width: 5vmin;
-        height: 5vmin;
+        width: 3vw;
+        height: 3vw;
         object-fit: contain;
         margin: 0;
         }
@@ -219,7 +216,7 @@ body    {
         }
 
 .testimonial__review {
-        width: 71%;
+        width: 73%;
         margin: 0 auto 4%;
         font-size: calc(3px + 1vw);    
         text-align: left;
