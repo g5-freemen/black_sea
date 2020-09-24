@@ -35,7 +35,7 @@ body {
 .header__logo {
     margin: 1.38vw 0;
     font-family: 'Cherry Swash', cursive;
-    font-size: calc(20px + 2vw);
+    font-size: calc(16px + 1.5vw);
     font-weight: 400;
     }
 
@@ -93,11 +93,11 @@ body {
     }
 
 .promo__title {
-    width: 52.2%;
+    width: 52%;
     margin: 13vw auto 3vw;
     text-transform: uppercase;
     color: #E4E4E4;
-    font-size: calc(10px + 2.2vw);
+    font-size: calc(12px + 2vw);
     }
 
 .promo__btn {
@@ -146,16 +146,16 @@ body {
     }
 
 .main__title {
-    width: 56%;
+    width: 60%;
     margin: 6% auto 3%;
     font-size: calc(6px + 2.2vw);
     font-weight: lighter;
     }
 
 .main__description {
-    width: 68%;
+    width: 71%;
     margin: 0;
-    font-size: calc(5px + 0.7vw);
+    font-size: calc(4px + 1vw);
     }
 
 .main-list__icons {
@@ -290,5 +290,5 @@ span::before {
 .footer {
     text-transform: uppercase;
     background-color: #00D089;
-    font-size: calc(6px + 0.5vw);
+    font-size: calc(4px + 0.5vw);
     }

@@ -5,4 +5,7 @@
     .burger-menu {
         display: flex;
         }
+    .promo__title {
+        width: 60%;
+        }
     }
