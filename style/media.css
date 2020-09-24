@@ -1,9 +1,8 @@
 @media screen and (max-width: 768px) {
-    .header__nav { display: none; }
-    .burger-menu { display: flex; }
-    }
-
-@media screen and (min-width: 768px) {
-    .header__nav { display: flex; }
-    .burger-menu { display: none; }
+    .header__nav {
+        display: none;
+        }
+    .burger-menu {
+        display: flex;
+        }
     }
