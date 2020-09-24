@@ -1,6 +1,6 @@
 # Домашнее задание к уроку 6
 
-https://g5-freemen.github.io/lesson_6/
+https://g5-freemen.github.io/black_sea/
 
 ### Верстаем макет.
 
